@@ -1,0 +1,225 @@
+*{
+  box-sizing: border-box !important;
+}
+.container{
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1000px;
+}
+body{
+    background-color: #8CBEB2;
+    font-size: 20px;
+}
+header{
+    background-color: #5C4B51;
+    padding: 20px 0;
+}
+header .container h1{
+    color: white;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.grocery-input-form{
+    border-top: 2px solid #5C4B51;
+    border-bottom: 2px solid #5C4B51;
+    padding: 10px 0;
+    text-align: left;
+}
+.grocery-input-form form{
+    display: block;
+}
+.grocery-input-form form .form-input{
+    display: inline-block;
+    margin: 0 20px 20px 0;
+}
+.grocery-input-form form .form-input#item-qty{
+    max-width: 80px;
+}
+.grocery-input-form form .form-input label{
+    display: block;
+    margin-bottom: 5px;
+}
+.grocery-input-form form .form-input#store-selector{
+    min-width: 150px;
+}
+.grocery-input-form form .form-input#store-selector select{
+    background-color: #fffcf0;
+    border: 0;
+    font-size: 20px;
+    padding: 5px;
+    width: 100%;
+}
+input{
+    background-color: #fffcf0;
+    border: 0;
+    display: block;
+    font-size: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 5px;
+}
+.grocery-input-form form .form-input#store-selector label{
+    cursor: pointer;
+}
+.grocery-input-form form button{
+    background-color: #8CBEB2;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    position: relative;
+    top: -4px;
+    transition: all 0.2s;
+}
+.grocery-input-form form button:hover{
+    background-color: #5C4B51;
+}
+
+.grocery-lists{
+    background-color: #F2EBBF;
+}
+.grocery-lists .container{
+    align-items: stretch;
+    display: flex;
+}
+.grocery-lists .container section{
+    flex-basis: 70%;
+    padding: 20px 40px;
+}
+.grocery-lists .container section h2.current-list-heading{
+    position: relative;
+    text-align: left;
+}
+.grocery-lists .container section h2.current-list-heading span{
+    color: #F06060;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.2s;
+}
+.grocery-lists .container section h2.current-list-heading span:hover{
+    color: #5C4B51;
+}
+.grocery-lists .container section ul{
+    list-style-type: none;
+    margin: 0 0 60px;
+    padding: 0;
+    text-align: left;
+}
+.grocery-lists .container section ul li{
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.grocery-lists .container section ul li:last-child{
+    border-bottom: 0;
+}
+.grocery-lists .container section ul li svg{
+    cursor: pointer;
+    float: right;
+    position: relative;
+    top: 4px;
+}
+.grocery-lists .container aside{
+    background-color: #fffcf0;
+    flex-basis: 30%;
+    padding: 20px;
+}
+.grocery-lists .container aside ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.grocery-lists .container aside ul li{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.App {
+    text-align: center;
+}
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.create-list{
+}
+.create-list .container{
+    align-items: center;
+    background-color: #F3B562;
+    display: flex;
+    padding: 20px;
+}
+.create-list .container h2{
+    flex: 1;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.create-list .container form{
+    flex: 1;
+    text-align: center;
+}
+.create-list .container form input{
+    display: inline-block;
+    margin-left: 5px;
+}
+.create-list .container form button{
+    background-color: transparent;
+    border-radius: 50%;
+    color: #F06060;
+    cursor: pointer;
+    border: 0;
+    font-size: 25px;
+    margin-left: 5px;
+    position: relative;
+    transition: all 0.2s;
+    z-index: 10;
+}
+.create-list .container form button:before{
+    background-color: white;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 70%;
+    left: 5px;
+    position: absolute;
+    top: 5px;
+    width: 70%;
+    z-index: -1;
+}
+.create-list .container form button:hover{
+    color: #282c34;
+}
